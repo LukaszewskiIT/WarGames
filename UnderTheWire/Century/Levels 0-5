@@ -1,1 +1,102 @@
-unitial upload
+## Level 0  
+  
+### Description  
+The goal of this level is to log into the game.  
+  
+**Host:**  
+`century1@century.underthewire.tech`  
+  
+### Solution  
+Log into the SSH session using the password provided in the **UnderTheWire Slack channel**.
+
+## Level 1  
+
+### Description  
+> The password for **Century2** is the build version of the instance of **PowerShell** installed on this system.  
+### Solution  
+  
+I searched in the browser how to check the PowerShell version using a command.  
+  
+Run the following command:  
+
+```powershell  
+$PSVersionTable  
+```
+
+![[Pasted image 20260308214958.png]]
+
+## Level 2
+
+### Description  
+> The password for Century3 is the name of the built-in cmdlet that performs the wget like function within PowerShell PLUS the name of the file on the desktop.
+### Solution  
+  
+I searched the web on how to list files in the current directory using a PowerShell command.
+  
+Run the following command:  
+  
+```powershell  
+Get-ChildItem  
+```
+## output:
+![[Pasted image 20260308230812.png]]
+
+The powershell 'wget' equilevent is:
+
+```powershell
+Invoke-WebRequest
+```
+
+## Level 3
+
+### Description  
+> The password for Century4 is the number of files on the desktop.
+
+
+
+Typical pipeline utilizing version:
+```powershell
+Get-ChildItem -File | Measure-Object | Select-Object -ExpandProperty Count
+```
+
+Short, console style version:
+```powershell
+(ls).Count
+```
+
+![[Pasted image 20260308232243.png]]
+
+## Level 4
+
+### Description  
+The password for Century5 is the name of the file within a directory on the desktop that has spaces in its name.
+
+### Solution
+
+```powershell
+Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
+```
+
+## output:
+
+![[Pasted image 20260311032430.png]]
+
+## Level 5
+
+### Solution
+
+#### 1:
+```powershell
+ls
+```
+#### 2:
+```powershell
+Get-ADDomain
+```
+
+## outputs:
+
+#### 1:
+![[Pasted image 20260311033717.png]]
+#### 2:
+![[Pasted image 20260311033513.png]]
