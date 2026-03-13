@@ -1,23 +1,22 @@
-## Level 0  
-  
-### Description  
-The goal of this level is to log into the game.  
-  
+# Level 0  
+ 
 **Host:**  
-`century1@century.underthewire.tech`  
-  
+`century1@century.underthewire.tech`
+#### Description:
+The goal of this level is to log into the game.
 ### Solution  
 Log into the SSH session using the password provided in the **UnderTheWire Slack channel**.
 
-## Level 1  
+---
+# Level 1  
 
-### Description  
+### Description & Objective:
 > The password for **Century2** is the build version of the instance of **PowerShell** installed on this system.  
-### Solution  
+### Solution:
   
-I searched in the browser how to check the PowerShell version using a command.  
-  
-Run the following command:  
+I searched in the browser how to check the PowerShell version using a command.
+
+### Commands & Output:
 
 ```powershell  
 $PSVersionTable  
