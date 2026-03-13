@@ -2,12 +2,18 @@
  
 **Host:**  
 `century1@century.underthewire.tech`
+
 #### Description:
 The goal of this level is to log into the game.
+
 ### Solution  
 Log into the SSH session using the password provided in the **UnderTheWire Slack channel**.
 
+##### Password:
+`century1`
+
 ---
+
 # Level 1  
 
 ### Description & Objective:
