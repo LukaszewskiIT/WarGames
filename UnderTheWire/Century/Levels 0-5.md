@@ -1,9 +1,9 @@
 # Level 0  
  
 **Host:**  
-`century1@century.underthewire.tech`
+`century0@century.underthewire.tech`
 
-#### Description:
+### Description&Objective:
 The goal of this level is to log into the game.
 
 ### Solution  
@@ -14,13 +14,16 @@ Log into the SSH session using the password provided in the **UnderTheWire Slack
 
 ---
 
-# Level 1  
+# Level 1
+
+**Host:**  
+`century1@century.underthewire.tech`
 
 ### Description & Objective:
 > The password for **Century2** is the build version of the instance of **PowerShell** installed on this system.  
-### Solution:
-  
-I searched in the browser how to check the PowerShell version using a command.
+
+### Solution
+> I searched in the browser how to check the PowerShell version using a command.
 
 ### Commands & Output:
 
@@ -30,36 +33,44 @@ $PSVersionTable
 
 ![[Pasted image 20260308214958.png]]
 
+---
+
 ## Level 2
 
-### Description  
+**Host:**  
+`century2@century.underthewire.tech`
+
+### Description & Objective:
 > The password for Century3 is the name of the built-in cmdlet that performs the wget like function within PowerShell PLUS the name of the file on the desktop.
-### Solution  
+
+### Solution
+> I searched the web on how to list files in the current directory using a PowerShell command.
   
-I searched the web on how to list files in the current directory using a PowerShell command.
-  
-Run the following command:  
+### Commands & Output:
   
 ```powershell  
 Get-ChildItem  
 ```
-## output:
 ![[Pasted image 20260308230812.png]]
-
-The powershell 'wget' equilevent is:
 
 ```powershell
 Invoke-WebRequest
 ```
 
+---
+
 ## Level 3
 
-### Description  
+**Host:**  
+`century3@century.underthewire.tech`
+
+### Description & Objective:
 > The password for Century4 is the number of files on the desktop.
 
+### Solution
+> 
 
-
-Typical pipeline utilizing version:
+### Commands & Output:
 ```powershell
 Get-ChildItem -File | Measure-Object | Select-Object -ExpandProperty Count
 ```
@@ -73,28 +84,42 @@ Short, console style version:
 
 ## Level 4
 
+**Host:**  
+`century4@century.underthewire.tech`
+
 ### Description  
 The password for Century5 is the name of the file within a directory on the desktop that has spaces in its name.
 
 ### Solution
+> 
+
+### Commands & Output:
 
 ```powershell
 Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
 ```
 
-## output:
-
 ![[Pasted image 20260311032430.png]]
+
+---
 
 ## Level 5
 
-### Solution
+**Host:**  
+`century5@century.underthewire.tech`
 
-#### 1:
+### Description & Objective:
+> 
+
+### Solution
+> 
+
+### Commands & Output:
+
 ```powershell
 ls
 ```
-#### 2:
+
 ```powershell
 Get-ADDomain
 ```
@@ -105,3 +130,11 @@ Get-ADDomain
 ![[Pasted image 20260311033717.png]]
 #### 2:
 ![[Pasted image 20260311033513.png]]
+
+---
+
+# Personal Thoughts:
+
+
+#### Sources:
+
