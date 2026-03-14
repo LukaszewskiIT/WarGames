@@ -109,27 +109,22 @@ Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
 `century5@century.underthewire.tech`
 
 ### Description & Objective:
-> 
+> The password for Century6 is the short name of the domain in which this system resides in PLUS the name of the file on the desktop.
 
 ### Solution
-> 
+> Used Get-Command to search for a query that might reference the domain name I was looking for, then listed the files using the shortened version of Get-ChildItem.
 
 ### Commands & Output:
 
 ```powershell
-ls
-```
-
-```powershell
 Get-ADDomain
 ```
-
-## outputs:
-
-#### 1:
-![Level5.1](Screenshots/century5.1.png)
-#### 2:
 ![Level5.2](Screenshots/century5.2.png)
+
+```powershell
+ls
+```
+![Level5.1](Screenshots/century5.1.png)
 
 ---
 
