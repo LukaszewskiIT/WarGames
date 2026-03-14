@@ -31,7 +31,7 @@ Log into the SSH session using the password provided in the **UnderTheWire Slack
 $PSVersionTable  
 ```
 
-![[Pasted image 20260308214958.png]]
+![[UnderTheWire/Century/Screenshoots/century1.png]]
 
 ---
 
