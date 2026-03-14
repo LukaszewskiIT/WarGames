@@ -119,12 +119,12 @@ Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
 ```powershell
 Get-ADDomain
 ```
-![Level5.2](Screenshots/century5.2.png)
+![Level5.1](Screenshots/century5.1.png)
 
 ```powershell
 ls
 ```
-![Level5.1](Screenshots/century5.1.png)
+![Level5.2](Screenshots/century5.2.png)
 
 ---
 
