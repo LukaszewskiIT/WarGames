@@ -68,14 +68,14 @@ Get-ChildItem
 > The password for Century4 is the number of files on the desktop.
 
 ### Solution
-> 
+> Researched how to count files using a PowerShell pipeline. The PowerShell version of the command was tedious to use, so I searched for a shorter alternative and found one.
 
 ### Commands & Output:
 ```powershell
 Get-ChildItem -File | Measure-Object | Select-Object -ExpandProperty Count
 ```
 
-Short, console style version:
+Short, Linux terminal style version:
 ```powershell
 (ls).Count
 ```
@@ -132,4 +132,4 @@ ls
 
 
 #### Sources:
-
+https://4sysops.com/archives/measure-object-computing-the-size-of-folders-and-files-in-powershell/
