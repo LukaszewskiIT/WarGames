@@ -23,7 +23,7 @@ Log into the SSH session using the password provided in the **UnderTheWire Slack
 > The password for **Century2** is the build version of the instance of **PowerShell** installed on this system.  
 
 ### Solution
-> I searched in the browser how to check the PowerShell version using a command.
+> Looked up how to check the installed PowerShell version and verified it by running the appropriate command in the PowerShell terminal.
 
 ### Commands & Output:
 
@@ -44,18 +44,18 @@ $PSVersionTable
 > The password for Century3 is the name of the built-in cmdlet that performs the wget like function within PowerShell PLUS the name of the file on the desktop.
 
 ### Solution
-> I searched the web on how to list files in the current directory using a PowerShell command.
+> Researched how to list files in the current directory using a PowerShell command. After identifying the file name, I added it at the end of the Invoke-WebRequest command (which is the PowerShell equivalent of wget), to create the password for the next level.
   
 ### Commands & Output:
-  
-```powershell  
-Get-ChildItem  
-```
-![[Pasted image 20260308230812.png]]
 
 ```powershell
 Invoke-WebRequest
 ```
+
+```powershell  
+Get-ChildItem  
+```
+![Level2](Screenshots/century2.png)
 
 ---
 
@@ -80,7 +80,7 @@ Short, console style version:
 (ls).Count
 ```
 
-![[Pasted image 20260308232243.png]]
+![Level3](Screenshots/century3.png)
 
 ## Level 4
 
@@ -99,7 +99,7 @@ The password for Century5 is the name of the file within a directory on the desk
 Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
 ```
 
-![[Pasted image 20260311032430.png]]
+![Level4(Screenshots/century4.png)
 
 ---
 
@@ -127,9 +127,9 @@ Get-ADDomain
 ## outputs:
 
 #### 1:
-![[Pasted image 20260311033717.png]]
+![Level5.1](Screenshots/century5.1.png)
 #### 2:
-![[Pasted image 20260311033513.png]]
+![Level5.2](Screenshots/century5.2.png)
 
 ---
 
