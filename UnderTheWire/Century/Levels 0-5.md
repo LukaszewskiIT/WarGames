@@ -99,7 +99,7 @@ The password for Century5 is the name of the file within a directory on the desk
 Get-ChildItem -Path "C:\users\century4\desktop\Can You Open Me"
 ```
 
-![Level4(Screenshots/century4.png)
+![Level4](Screenshots/century4.png)
 
 ---
 
