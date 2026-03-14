@@ -44,7 +44,7 @@ $PSVersionTable
 > The password for Century3 is the name of the built-in cmdlet that performs the wget like function within PowerShell PLUS the name of the file on the desktop.
 
 ### Solution
-> Researched how to list files in the current directory using a PowerShell command. After identifying the file name, I added it at the end of the Invoke-WebRequest command (which is the PowerShell equivalent of wget), to create the password for the next level.
+> Researched how to list files in the current directory using a PowerShell command. After identifying the file name, I added it at the end of the `Invoke-WebRequest` command (which is the PowerShell equivalent of wget), to create the password for the next level.
   
 ### Commands & Output:
 
