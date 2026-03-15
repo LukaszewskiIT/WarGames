@@ -149,3 +149,6 @@ Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.5) – knowledge about the `Get-Content` cmdlet.
 - [PowerShellFAQs](https://powershellfaqs.com/change-directory-in-powershell/) – guidance on moving between directories in PowerShell.
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-unique?view=powershell-7.5) - knowledge about the `Get-Unique` cmdlet.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/sort-object?view=powershell-7.5) - knowledge about the `Sort-object` cmdlet.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/measure-object?view=powershell-7.5) - knowledge about the `Measure-Object` cmdlet.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.5) - knowledge about the `Get-Service` cmdlet.
