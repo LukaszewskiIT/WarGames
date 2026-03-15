@@ -15,7 +15,7 @@
 ```
 
 
-![[Pasted image 20260315145753.png]]
+![Level6](Screenshots/century6.png)
 
 ---
 
@@ -44,7 +44,7 @@ Get-ChildItem -Recurse -Filter "*.txt"
 Get-Content -Path C:\users\century7\Downloads\Readme.txt
 ```
 
-![[Pasted image 20260315154015.png]]
+![Level7](Screenshots/century7.png)
 
 ---
 
@@ -70,7 +70,7 @@ ls
 Get-Content unique.txt | Sort-Object | Get-Unique | Measure-Object
 ```
 
-![[Pasted image 20260315165050.png]]
+![Level8](Screenshots/century8.png)
 
 ---
 
@@ -98,7 +98,7 @@ $strings = (Get-Content .\Word_File.txt).Split()
 $strings[160]
 ```
 -
-![[Pasted image 20260315173056.png]]
+![Level9](Screenshots/century9.png)
 
 ---
 
@@ -106,43 +106,21 @@ $strings[160]
 # Level 10  
 
 #### Host:
-`Lorem  ipsum Lorem  ipsum Lorem  ipsum `
+`ssh century10@century.underthewire.tech`
 
 ### Description&Objective:
-> Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
-### Solution:
-  
-Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
+> The password for Century11 is the 10th and 8th word of the Windows Update service description combined PLUS the name of the file on the desktop.
 
+### Solution:
+>Another level that required some deeper thinking. Using `Get-Service` and `Get-Member` didn’t cut it because there was no description of the service I needed to progress, so I began searching for other cmdlets that could help me.
+>
+>While searching through the Microsoft Docs, I read that `Win32_Service` should contain the properties I was looking for. That gave me a hint about what the command I was supposed to execute should look like. First, I would need to retrieve data from the CIM/WMI classes, then filter it by the actual Windows Update service name `wuauserv`, select the correct object, and finally display the description.
+  
 ### Commands&Outpust:
 
-
-
----
-
-
-
-# Level 11  
-
-#### Host:
-`Lorem  ipsum Lorem  ipsum Lorem  ipsum `
-
-### Description&Objective:
-> Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
-### Solution:
-  
-Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
-
-### Commands&Outpust:
-
-
+![Level10](Screenshots/century10.png)
 
 ---
-
-
-
-
-
 
 #### References:
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.5) & [PowerShellFAQs](https://powershellfaqs.com/find-file-by-name-in-powershell/) – knowledge about the `Get-ChildItem` cmdlet. 
@@ -152,3 +130,6 @@ Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/sort-object?view=powershell-7.5) - knowledge about the `Sort-object` cmdlet.
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/measure-object?view=powershell-7.5) - knowledge about the `Measure-Object` cmdlet.
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.5) - knowledge about the `Get-Service` cmdlet.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.5) - knowledge about the `Get-Member` cmdlet.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-service)  - knowledge about Win32_Service class.
+- [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.5) - knowledge  about the `Get-CimInstance` cmdlet.
