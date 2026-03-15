@@ -133,4 +133,7 @@ ls
 
 #### References
 
-- https://4sysops.com/archives/measure-object-computing-the-size-of-folders-and-files-in-powershell/
+- https://powershellfaqs.com/how-to-check-powershell-version/ – using `$PSVersionTable` to check the build version of the instance of PowerShell installed.
+- https://4sysops.com/archives/measure-object-computing-the-size-of-folders-and-files-in-powershell/ – using `Measure-Object` and pipeline logic to calculate folder and file sizes in PowerShell.
+- https://stackoverflow.com/questions/14714284/powershell-count-items-in-a-folder-with-powershell - finding `(ls).Count` and information about the `.Count` property.
+- `Get-Command` – used to locate the `Invoke-WebRequest` cmdlet in PowerShell.
