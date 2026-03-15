@@ -14,6 +14,12 @@ No AI was used to solve these challenges. The only resources I used were officia
 
 ---
 
+## Skills Demonstrated
+PowerShell
+Documentation
+
+---
+
 ## Notes
 
 I do not provide passwords to the levels because doing so would violate the rules established by the authors of the wargame. The only exception is the password for Level 1, as it is not related to performing any actions in PowerShell.
