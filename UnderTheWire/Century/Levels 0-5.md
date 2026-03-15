@@ -91,7 +91,8 @@ Short, Linux terminal style version:
 The password for Century5 is the name of the file within a directory on the desktop that has spaces in its name.
 
 ### Solution
-> 
+
+> The solution is to check the name of the directory on the desktop and, knowing its path, use `Get-ChildItem` with the appropriate parameters.
 
 ### Commands & Output:
 
