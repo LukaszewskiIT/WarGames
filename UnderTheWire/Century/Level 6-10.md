@@ -24,7 +24,7 @@
 #### Host:
 `ssh century7@century.underthewire.tech`
 
-### Description&Objective:
+### Description & Objective:
 > The password for Century8 is in a readme file somewhere within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user’s profile.
 ### Solution
 
@@ -52,17 +52,25 @@ Get-Content -Path C:\users\century7\Downloads\Readme.txt
 # Level 8  
 
 #### Host:
-`Lorem  ipsum Lorem  ipsum Lorem  ipsum `
+`ssh century8@century.underthewire.tech`
 
-### Description&Objective:
-> Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
+### Description & Objective:
+> The password for Century9 is the number of unique entries within the file on the desktop.
 ### Solution:
   
-Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
+The solution is to locate the `.txt` file on the desktop that contains the entries and parse its contents using `Get-Content`. The output is then processed through `Sort-Object` and `Get-Unique` to identify unique entries, and finally counted using `Measure-Object`.
 
-### Commands&Outpust:
+### Commands & Outpust:
 
+```powershell
+ls
+```
 
+```powershell
+Get-Content unique.txt | Sort-Object | Get-Unique | Measure-Object
+```
+
+![[Pasted image 20260315165050.png]]
 
 ---
 
@@ -72,13 +80,13 @@ Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum
 #### Host:
 `Lorem  ipsum Lorem  ipsum Lorem  ipsum `
 
-### Description&Objective:
+### Description & Objective:
 > Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
 ### Solution:
   
 Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
 
-### Commands&Outpust:
+### Commands & Outpust:
 
 
 
