@@ -3,7 +3,7 @@
 **Host:**  
 `century0@century.underthewire.tech`
 
-### Description&Objective:
+### Description & Objective:
 The goal of this level is to log into the game.
 
 ### Solution  
