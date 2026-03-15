@@ -129,7 +129,7 @@ ls
 ---
 
 # Personal Thoughts:
-
+>> PowerShell syntax feels less ergonomic and intuitive compared to the Linux terminal, which I am much more familiar with. However, it appears to be a powerful tool worth learning. I’m looking forward to completing the remaining challenges.
 
 #### Sources:
 https://4sysops.com/archives/measure-object-computing-the-size-of-folders-and-files-in-powershell/
