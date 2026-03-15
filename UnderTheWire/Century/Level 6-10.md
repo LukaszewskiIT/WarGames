@@ -58,7 +58,7 @@ Get-Content -Path C:\users\century7\Downloads\Readme.txt
 > The password for Century9 is the number of unique entries within the file on the desktop.
 ### Solution:
   
-The solution is to locate the `.txt` file on the desktop that contains the entries and parse its contents using `Get-Content`. The output is then processed through `Sort-Object` and `Get-Unique` to identify unique entries, and finally counted using `Measure-Object`.
+> The solution is to locate the `.txt` file on the desktop that contains the entries and parse its contents using `Get-Content`. The output is then processed through `Sort-Object` and `Get-Unique` to identify unique entries, and finally counted using `Measure-Object`.
 
 ### Commands & Outpust:
 
