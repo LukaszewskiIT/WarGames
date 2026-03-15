@@ -122,6 +122,9 @@ $strings[160]
 
 ---
 
+# Personal Thoughts:
+>> These levels provided a greater challenge than the previous ones. I needed to spend some time looking through Microsoft documentation and forums. Although it was a challenging task, I gained a better understanding of the PowerShell workflow.
+
 #### References:
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.5) & [PowerShellFAQs](https://powershellfaqs.com/find-file-by-name-in-powershell/) – knowledge about the `Get-ChildItem` cmdlet. 
 - [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.5) – knowledge about the `Get-Content` cmdlet.
