@@ -28,7 +28,7 @@
 > The password for Century8 is in a readme file somewhere within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user’s profile.
 ### Solution
 
-To solve this section, I needed to run a recursive search across the user folders to find the specified readme file. I assumed it would be a `.txt` file, so I ran a command filtering the results by that extension. Then, I used `Get-Content` with the specified path to view the file's contents.
+> To solve this section, I needed to run a recursive search across the user folders to find the specified readme file. I assumed it would be a `.txt` file, so I ran a command filtering the results by that extension. Then, I used `Get-Content` with the specified path to view the file's contents.
 
 ### Commands&Outpust:
 
