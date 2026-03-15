@@ -78,17 +78,27 @@ Get-Content unique.txt | Sort-Object | Get-Unique | Measure-Object
 # Level 9 
 
 #### Host:
-`Lorem  ipsum Lorem  ipsum Lorem  ipsum `
+`ssh century9@century.underthewire.tech`
 
 ### Description & Objective:
-> Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
+> The password for Century10 is the 161st word within the file on the desktop.
 ### Solution:
   
-Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum Lorem  ipsum 
+Here I needed to think a bit. The file on the desktop contains a large number of unsorted words, and the goal is to find the 161st one. Counting them manually was not practical, so I decided to store the words in a structure that would allow easy indexing.
+
+The first solution that came to mind was creating an array. I created an array named `$strings` and populated it using `Get-Content`, splitting the words with the `.Split()` method. After creating the array, the only step left was to retrieve the 161st word. Since array indexing starts at 0, the correct index is `160`.
 
 ### Commands & Outpust:
 
+```powershell
+$strings = (Get-Content .\Word_File.txt).Split()
+```
 
+```powershell
+$strings[160]
+```
+-
+![[Pasted image 20260315173056.png]]
 
 ---
 
