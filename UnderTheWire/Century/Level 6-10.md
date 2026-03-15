@@ -116,7 +116,15 @@ $strings[160]
 >
 >While searching through the Microsoft Docs, I read that `Win32_Service` should contain the properties I was looking for. That gave me a hint about what the command I was supposed to execute should look like. First, I would need to retrieve data from the CIM/WMI classes, then filter it by the actual Windows Update service name `wuauserv`, select the correct object, and finally display the description.
   
-### Commands&Outpust:
+### Commands&Outpust:### Commands&Outpust:
+
+```powershell
+Get-Service wuauserv | Get-Member
+```
+
+```powershell
+Get-CimInstance Win32_Service -Filter "Name='wuauserv'" | Select-Object Name, Description
+```
 
 ![Level10](Screenshots/century10.png)
 
